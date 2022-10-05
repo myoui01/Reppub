@@ -1,0 +1,90 @@
+.video-player {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  video {
+    width: 100%;    
+  }
+
+  .video-controls {
+    position: absolute;
+
+    display: flex;
+
+    right: 3rem;
+    bottom: 3rem;
+
+    @media screen and (max-width: 768px) {
+      right: 0;
+      top: 4rem;
+      width: 100%;
+      padding: 3rem;
+
+      justify-content: space-between;
+    }
+
+    button {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      
+      &.video-play-button {
+        border: 1px solid #fff;
+        background-color: #333;
+
+        @media screen and (max-width: 768px) {
+          border: none;
+          background-color: transparent;
+
+          img {
+            width: 2rem;
+          }
+        }
+      }
+
+      &#video-mute-button {
+        border: none;
+        margin-right: 1rem;
+
+        @media screen and (max-width: 768px) {
+          img {
+            width: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.call-to-action {
+  position: absolute;
+  display: flex;
+  bottom: 8rem;
+  left: 8rem;
+
+  @media screen and (max-width: 768px) {
+    
+    bottom: 4rem;
+    left: 6rem;
+    right: 6rem;
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  a {
+    background-color: #fff;
+
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    
+    min-width: 20rem;
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.4);
+
+    
+  }
+}

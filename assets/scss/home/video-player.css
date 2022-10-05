@@ -1,0 +1,116 @@
+.video-player {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.video-player video {
+  width: 100%;
+}
+
+.video-player .video-controls {
+  position: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 3rem;
+  bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .video-player .video-controls {
+    right: 0;
+    top: 4rem;
+    width: 100%;
+    padding: 3rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.video-player .video-controls button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.video-player .video-controls button.video-play-button {
+  border: 1px solid #fff;
+  background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .video-player .video-controls button.video-play-button {
+    border: none;
+    background-color: transparent;
+  }
+  .video-player .video-controls button.video-play-button img {
+    width: 2rem;
+  }
+}
+
+button#video-mute-button {
+  margin-top: -130px;
+  margin-left: 1200px;
+}
+
+button#video-pause-button {
+  margin-top: -130px;
+}
+
+.video-player .video-controls button#video-mute-button {
+  border: none;
+  margin-right: 1rem;
+}
+
+/* @media screen and (max-width: 768px) {
+  .video-player .video-controls button#video-mute-button img {
+    width: 2rem;
+  }
+} */
+
+.call-to-action {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 9rem;
+  left: 60rem;
+}
+
+@media screen and (max-width: 768px) {
+  .call-to-action {
+    bottom: 4rem;
+    left: 6rem;
+    right: 6rem;
+    padding-right: 30px;
+    margin-bottom: 70px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+button#video-mute-button {
+  margin-top: -130px;
+  margin-left: 1200px;
+}
+
+button#video-pause-button {
+  margin-top: -130px;
+}
+
+.call-to-action a {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  min-width: 20rem;
+  -webkit-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.4);
+}
+/*# sourceMappingURL=video-player.css.map */
